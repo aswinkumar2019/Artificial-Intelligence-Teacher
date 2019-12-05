@@ -50,7 +50,7 @@ def analyseQuestion(button,assistant):
        mark=100
     time.sleep(1)
     nothing()
-    aiy.audio.say("What is the total number of alphabets in english?"')
+    aiy.audio.say("What is the total number of alphabets in english?")
     text,audio=speechToTextConverter(button,assistant)
     print(text)
     if text.lower().find("26")>=0 or text.lower().find("twentysix")>=0:
@@ -135,7 +135,7 @@ def analyseQuestion(button,assistant):
     else:
         mark-=15
         wrong()
-        aiy.audio.say("Sorry for that.You made it wrong . white is the correct answer")
+        aiy.audio.say("Sorry for that.You made it wrong white is the correct answer")
     time.sleep(2)
     nothing() 
     aiy.audio.say("Which animal. is called the Ship of the Desert?")
@@ -160,12 +160,12 @@ def main1():
     text = None
     while(not text):
         text, audio = assistant.recognize()
-    aiy.audio.say("Today is going to be a special day for you kids. do u know why?"')
+    aiy.audio.say("Today is going to be a special day for you kids. do u know why?")
     text = None
     while(not text):
         text, audio = assistant.recognize()
     if(text.lower().find("no")>=0):
-        aiy.audio.say("You are going to Learn coding"')
+        aiy.audio.say("You are going to Learn coding")
         time.sleep(0.3)
         aiy.audio.say("Believe me it’s going to be lot of fun")
     text = None
